@@ -31,7 +31,7 @@ print(">>> Using database:", os.path.abspath(
 ))
 
 # === Инициализация базы данных ===
-from models import db, User, Role, VisitLog
+from .models import db, User, Role, VisitLog
 
 db.init_app(app)
 
