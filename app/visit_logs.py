@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, Response
 from flask_login import current_user
-from app import db, VisitLog, User, check_rights
+from .app import db, VisitLog, User, check_rights
 from datetime import datetime
 import io, csv
 
@@ -109,3 +109,4 @@ def users_report_export():
         mimetype='text/csv',
         headers={'Content-Disposition': 'attachment; filename=users_report.csv'}
     )
+
